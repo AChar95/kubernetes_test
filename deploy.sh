@@ -1,5 +1,5 @@
 #! /bin/bash
 
-./jenkins/deploy_jenkins.sh
-./web/deploy_web.sh
-./loadBalancer/deploy_nginx.sh
+kubectl create -f ./jenkins/ -R
+kubectl create -f ./loadBalancer/ -R
+kubectl create -f ./loadBalancer/ -R
