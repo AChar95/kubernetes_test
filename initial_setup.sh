@@ -9,3 +9,10 @@ READ $noNodes
 echo "Please enter the zone you wish to use"
 READ $zone
 
+echo"-------------"
+echo "The following settings have been accepted: cluster name -> $clusterName, machine type -> $machineType, number of nodes -> $noNodes, zone -> $zone"
+echo "------------"
+echo "Are these values correct?"
+echo "Y/n"
+READ $userResponse
+case 
