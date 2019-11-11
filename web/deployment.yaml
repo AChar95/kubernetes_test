@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-web
+  name: web
 spec:
   selector:
     matchLabels:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - image: achar95/kuberneteslanding:1
-        name: web-ctr
+        name: web
         ports:
         - containerPort: 8080
