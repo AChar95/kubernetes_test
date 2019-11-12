@@ -15,6 +15,6 @@ These files are from previous versions of the deployment and are simply there fo
 # Current deployment instructions:
 ## GCP
 	- for the command below the -m is short for the --machine-type -z is short for the --zone
-	- The below machine type and zones are not complusory, though it is advised to use a machine which has a reasonable amount of ram, this will allow for all the pods to be deloyed
+	- The below machine type and zones are not complusory, though it is advised to use a machine which has a reasonable amount of ram, this will allow for all the pods to be deployed
 	- run: gcloud container clusters create -m n1-standard-1 -z us-central1-b --num-nodes 4 k8-test
 	- then run ./deploy.sh
